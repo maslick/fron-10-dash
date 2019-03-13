@@ -1,5 +1,5 @@
 # fron-10-dash
-runtime-configurable frontend
+runtime-configurable static frontend
 
 
 ## s2i
