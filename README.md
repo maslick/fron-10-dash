@@ -9,3 +9,7 @@ $ oc new-app registry.access.redhat.com/rhscl/nodejs-8-rhel7~https://github.com/
 $ oc expose svc/frontendash
 $ oc set env dc/frontendash PORT=8080 URL=www.maslick.ru
 ```
+
+```
+$ oc set env dc/frontendash URL=google.com
+```
