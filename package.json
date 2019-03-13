@@ -1,0 +1,15 @@
+{
+  "name": "fron-10-dash",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "build": "echo building...",
+    "start": "./generate_config_js.sh > src/config.js && node server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "serve-static": "^1.13.2",
+    "connect": "^3.6.6"
+  }
+}
