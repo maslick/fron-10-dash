@@ -4,7 +4,7 @@
   "description": "",
   "scripts": {
     "build": "echo building...",
-    "start": "./generate_config_js.sh > src/config.js && node server.js"
+    "start": "./configure.sh > src/config.js && node server.js"
   },
   "author": "",
   "license": "ISC",
