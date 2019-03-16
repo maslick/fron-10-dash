@@ -35,6 +35,6 @@ oc set env dc/fron-10-dash URL=google.com
 ```
 heroku create fron-10-dash
 git push heroku master
-heroku open
 heroku config:set USER=test KEY=54321 URL=www.maslick.ru
+heroku open
 ```
