@@ -8,7 +8,6 @@ docker build -t fron10dash:1.0 -f docker/Dockerfile .
 docker image prune --filter label=stage=intermediate -f
 docker run -d \
    -e URL=maslick.io \
-   -e PORT=8080 \
    -e USER=test \
    -e KEY=54321 \
    -p 8080:80 \
