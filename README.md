@@ -2,7 +2,7 @@
 runtime-configurable static web-app
 
 
-## Docker
+## s2i
 ```
 s2i build https://github.com/maslick/fron-10-dash.git registry.access.redhat.com/rhscl/nodejs-8-rhel7 frontendash:1.0
 docker run -d \
