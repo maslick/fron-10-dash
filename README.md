@@ -2,7 +2,7 @@
 runtime-configurable static web-app
 
 ## Docker multistage build
-Here I'm using ``node:8`` image as build image and ``nginx`` as runtime image.
+Here I'm using ``node:8`` image as build image and ``nginx`` as runtime image. This reduces image size from ~ 500Mb to 100Mb.
 ```
 docker build -t fron10dash:1.0 -f docker/Dockerfile .
 docker run -d \

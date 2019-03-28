@@ -3,8 +3,8 @@
   "version": "1.0.0",
   "description": "",
   "scripts": {
-    "build": "echo building...",
-    "start": "./configure.sh > src/config.js && node server.js"
+    "build": "cp -r src dist",
+    "start": "./configure.sh > dist/config.js && node server.js"
   },
   "author": "",
   "license": "ISC",
