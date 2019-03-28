@@ -1,6 +1,19 @@
 # fron-10-dash
 runtime-configurable static web-app
 
+## Docker multistage build
+Here I'm using ``node:8`` image as build image and ``nginx`` as runtime image.
+```
+docker build -t fron10dash:1.0 -f docker/Dockerfile .
+docker run -d \
+   -e URL=maslick.io \
+   -e PORT=8080 \
+   -e USER=test \
+   -e KEY=54321 \
+   -p 8080:80 \
+   fron10dash:1.0
+open http://`docker-machine ip`:8080
+```
 
 ## s2i
 ```
