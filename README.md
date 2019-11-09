@@ -1,9 +1,13 @@
 # fron-10-dash
 runtime-configurable static web-app
 
+[![image size](https://img.shields.io/badge/image%20size-48MB-blue.svg)](https://cloud.docker.com/u/maslick/repository/docker/maslick/fron10dash)
+
 ## Docker multistage build
 [Here](docker/Dockerfile) I'm using ``node:8`` image as build image and ``nginx`` as runtime image. This reduces image size from ~500Mb to 100Mb.
-```
+
+Build yourself:
+```zsh
 docker build -t fron10dash:1.0 -f docker/Dockerfile .
 docker image prune --filter label=stage=intermediate -f
 docker run -d \
@@ -13,6 +17,17 @@ docker run -d \
    -p 8080:80 \
    fron10dash:1.0
 open http://`docker-machine ip`:8080
+```
+
+Download from Dockerhub: 
+```zsh
+docker run -d \
+   -e URL=maslick.ru \
+   -e USER=test \
+   -e KEY=12345 \
+   -p 8081:80 \
+   maslick/fron10dash
+open http://`docker-machine ip`:8081
 ```
 
 ## s2i
