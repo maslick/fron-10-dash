@@ -66,3 +66,9 @@ git push heroku master
 heroku config:set USER=test KEY=54321 URL=www.maslick.ru
 heroku open
 ```
+
+## Kubernetes
+```
+kubectl apply -f k8s/deployment.yaml
+kubectl apply -f k8s/ingress.yaml
+```
