@@ -1,7 +1,7 @@
 # fron-10-dash
 runtime-configurable static web-app
 
-[![image size](https://img.shields.io/badge/image%20size-48MB-blue.svg)](https://cloud.docker.com/u/maslick/repository/docker/maslick/fron10dash)
+[![image size](https://img.shields.io/badge/image%20size-48MB-blue.svg)](https://hub.docker.com/r/maslick/fron10dash)
 
 ## Docker multistage build
 [Here](docker/Dockerfile) I'm using ``node:8`` image as build image and ``nginx`` as runtime image. This reduces image size from ~500Mb to 100Mb.
